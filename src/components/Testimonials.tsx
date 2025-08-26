@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import CountUp from './CountUp'
 import GlareHover from './GlareHover'
+import RotatingText from './RotatingText'
 
 export default function Testimonials() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
@@ -49,9 +50,20 @@ export default function Testimonials() {
           <div className="inline-flex items-center px-4 py-2 bg-muted text-muted-foreground rounded-full text-sm font-medium mb-6">
             💬 Success Stories
           </div>
-          <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
-            Loved by
-            <span className="text-primary"> Professionals</span>
+          <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 flex flex-wrap items-center justify-center gap-x-4">
+            <span>Recommended by</span>
+            <RotatingText
+              texts={['Developers', 'Engineers', 'Designers', 'Managers', 'Analysts', 'Consultants']}
+              mainClassName="bg-primary text-muted px-4 py-3 rounded-lg inline-flex min-w-[200px] justify-center"
+              staggerFrom="last"
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "-120%" }}
+              staggerDuration={0.025}
+              splitLevelClassName="overflow-hidden pb-1"
+              transition={{ type: "spring", damping: 30, stiffness: 400 }}
+              rotationInterval={2500}
+            />
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Join thousands of successful candidates who have transformed their interview experience.
