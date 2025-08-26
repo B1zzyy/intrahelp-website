@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   description: 'Revolutionary AI-powered interview assistant that helps you ace your job interviews with real-time assistance and expert guidance.',
   keywords: 'AI interview assistant, job interview help, interview preparation, career coaching, AI assistant',
   authors: [{ name: 'IntraHelp Team' }],
+  icons: {
+    icon: '/icon.png',
+    shortcut: '/icon.png',
+    apple: '/icon.png',
+  },
   openGraph: {
     title: 'IntraHelp - AI Interview Assistant',
     description: 'Revolutionary AI-powered interview assistant that helps you ace your job interviews',
