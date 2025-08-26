@@ -102,11 +102,20 @@ export default function HowItWorks() {
                   </p>
                 </SpotlightCard>
                 
-                {/* Arrow for desktop */}
+                {/* Arrow for desktop (horizontal) */}
                 {index < steps.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
                     <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground shadow-lg">
                       →
+                    </div>
+                  </div>
+                )}
+                
+                {/* Arrow for mobile (vertical) */}
+                {index < steps.length - 1 && (
+                  <div className="lg:hidden absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground shadow-lg">
+                      ↓
                     </div>
                   </div>
                 )}

@@ -60,7 +60,7 @@ export default function Pricing() {
       <div className="container mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center px-4 py-2 bg-card text-card-foreground rounded-full text-sm font-medium mb-6">
             💰 Pricing Plans
           </div>
           <h2 className="text-4xl lg:text-6xl font-bold text-foreground mb-6">
