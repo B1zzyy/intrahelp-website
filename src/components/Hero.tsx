@@ -7,7 +7,7 @@ import DecryptedText from './DecryptedText'
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-background flex items-center pt-16 md:pt-16 sm:pt-24 relative overflow-hidden">
+    <section className="min-h-screen bg-background flex items-center pt-32 md:pt-16 pb-8 md:pb-0 relative overflow-hidden">
       {/* Interactive Dot Grid Background */}
       <div className="absolute inset-0 opacity-50">
         <DotGrid
@@ -87,9 +87,9 @@ export default function Hero() {
           </div>
           
           {/* Right Visual */}
-          <div className="relative px-4 sm:px-0">
-            <div className="bg-card rounded-3xl shadow-xl p-8 transform rotate-2 hover:rotate-0 transition-transform duration-500 border border-border">
-              <div className="bg-muted rounded-2xl p-6">
+          <div className="relative px-4 md:px-0 mt-8 md:mt-0">
+            <div className="bg-card rounded-3xl shadow-xl p-4 md:p-8 transform rotate-2 hover:rotate-0 transition-transform duration-500 border border-border">
+              <div className="bg-muted rounded-2xl p-4 md:p-6">
                 <div className="flex items-center space-x-2 mb-4">
                   <div className="w-3 h-3 bg-destructive rounded-full"></div>
                   <div className="w-3 h-3 bg-chart-3 rounded-full"></div>
